@@ -174,7 +174,7 @@ if (selected == 'Hypertension Prediction'):
     # creating a button for Prediction
     
     if st.button('Hypertension Test Result'):
-        hypertension_prediction = hypertension_model.predict([[age, BMI, heartRate]])                          
+        hypertension_prediction = hypertension_disease_model.predict([[age, BMI, heartRate]])                          
         
         if (hypertension_prediction[0] == 1):
           hypertension_diagnosis = 'The person is at risk of hypertension'
