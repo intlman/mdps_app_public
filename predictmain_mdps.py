@@ -14,11 +14,11 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-cardiovascular_disease_model: object = pickle.load(open('cardiovascular_disease_model.sav', 'rb'))
+cardiovascular_disease_model = pickle.load(open('rb', 'cardiovascular_disease_model.sav'))
 
-heart_disease_model: object = pickle.load(open('heart_disease_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('rb', 'heart_disease_model.sav'))
 
-hypertension_disease_model: object = pickle.load(open("hypertension_disease_model.sav", 'rb'))
+hypertension_disease_model = pickle.load(open('rb', 'hypertension_disease_model.sav'))
 
 
 # sidebar for navigation
