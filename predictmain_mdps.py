@@ -29,7 +29,7 @@ with st.sidebar:
                           ['Cardiovascular Disease Prediction',
                            'Heart Disease Prediction',
                            'Hypertension Prediction'],
-                          icons=['activity','heart', 'person'],
+                          icons=['activity','heart','person'],
                           default_index=0)
     
     
@@ -112,7 +112,7 @@ if (selected == 'Heart Disease Prediction'):
         trestbps = st.text_input('Resting Blood Pressure')
         
     with col2:
-        chol = st.text_input('Serum Cholestoral in mg/dl')
+        chol = st.text_input('Serum Cholesterol in mg/dl')
                
     with col2:
         thalach = st.text_input('Maximum Heart Rate achieved')
@@ -127,10 +127,10 @@ if (selected == 'Heart Disease Prediction'):
         slope = st.text_input('Slope of the peak exercise ST segment')
         
     with col3:
-        ca = st.text_input('Major vessels colored by flourosopy')
+        ca = st.text_input('Major vessels colored by fluoroscopy')
         
     with col1:
-        thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
+        thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversible defect')
         
      
     # code for Prediction
