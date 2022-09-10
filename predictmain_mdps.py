@@ -42,7 +42,7 @@ if (selected == 'Cardiovascular Disease Prediction'):
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        age = st.text_input('Age')
+        age = st.text_input('Age: in days')
         
     with col2:
         gender = st.text_input('Gender: 1 = female, 2 = male')
@@ -139,7 +139,7 @@ if (selected == 'Heart Disease Prediction'):
     # creating a button for Prediction
     
     if st.button('Heart Disease Test Result'):
-        heart_prediction = heart_disease_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]])                          
+        heart_prediction = heart_disease_model.predict([[age, sex, cp, trestbps, chol, thalach, exang, oldpeak, slope, ca, thal]])
         
         if (heart_prediction[0] == 1):
           heart_diagnosis = 'You are at risk for heart disease'
@@ -161,7 +161,7 @@ if (selected == 'Hypertension Prediction'):
         age = st.text_input('Age')
       
     with col2:
-        bmi = st.text_input('BMI')
+        BMI = st.text_input('BMI')
         
     with col3:
         heartRate = st.text_input('Heart Rate')
