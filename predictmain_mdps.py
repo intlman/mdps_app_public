@@ -8,17 +8,18 @@ Original file is located at
 """
 
 import pickle
+import pickle
 import streamlit as st                                                                                                                                                                                                                                                             
 from streamlit_option_menu import option_menu
 
 
 # loading the saved models
 
-cardiovascular_disease_model = pickle.load(open('C:\Users\regin\Desktop\HUD_Final\cardiovascular_disease_model.sav', 'rb'))
+cardiovascular_disease_model = pickle.load(open('C:/Users/regin/Desktop/HUD_Final/cardiovascular_disease_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('C:\Users\regin\Desktop\HUD_Final\heart_disease_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('C:/Users/regin/Desktop/HUD_Final/heart_disease_model.sav', 'rb'))
 
-hypertension_disease_model = pickle.load(open('C:\Users\regin\Desktop\HUD_Final\hypertension_disease_model.sav', 'rb'))
+hypertension_disease_model = pickle.load(open('C:/Users/regin/Desktop/HUD_Final/hypertension_disease_model.sav', 'rb'))
 
 
 # sidebar for navigation
