@@ -176,8 +176,8 @@ if (selected == 'Hypertension Prediction'):
         hypertension_prediction = hypertension_disease_model.predict([[age, BMI, heartRate]])                          
         
         if (hypertension_prediction[0] == 1):
-          hypertension_diagnosis = 'The person is at risk of hypertension'
+          hypertension_diagnosis = 'You are not at risk of hypertension'
         else:
-          hypertension_diagnosis = 'The person is not at risk of hypertension'
+          hypertension_diagnosis = 'You are at risk of hypertension'
         
     st.success(hypertension_diagnosis)
